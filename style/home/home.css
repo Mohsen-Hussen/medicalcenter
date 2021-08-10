@@ -1,0 +1,217 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Cairo', sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
+
+/* common classes*/
+.sectionTitle {
+  text-align: center;
+  padding-bottom: 30px; }
+  .sectionTitle h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #0085CC; }
+    .sectionTitle h2::before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 120px;
+      height: 1px;
+      background: #A8AD9B;
+      bottom: 1px;
+      left: calc(50% - 60px); }
+    .sectionTitle h2::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 40px;
+      height: 3px;
+      background: #00e195;
+      bottom: 0;
+      left: calc(50% - 20px); }
+
+.customBtn {
+  border-color: #0085CC;
+  background-color: #0085CC;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px; }
+  .customBtn:hover {
+    background-color: #fff;
+    color: #0085CC;
+    transition: all 0.5s ease-in-out; }
+
+.profileBtn {
+  border-color: #00e195;
+  background-color: #fff;
+  color: #00e195;
+  font-weight: bold;
+  letter-spacing: 1px; }
+  .profileBtn:hover {
+    background-color: #00e195;
+    color: #fff;
+    transition: all 0.5s ease-in-out; }
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .customBtn, .profileBtn {
+    font-size: 0.8rem; } }
+.modal .modal-header {
+  background-color: rgba(215, 243, 255, 0.3); }
+  .modal .modal-header .modal-title {
+    color: #0085CC;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 1.5rem; }
+.modal .modal-body label {
+  color: #0085CC;
+  letter-spacing: 2px; }
+.modal .modal-body a {
+  color: #0085CC;
+  font-size: 1.1rem; }
+  .modal .modal-body a:hover {
+    color: #00e195;
+    letter-spacing: 2px;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out; }
+.modal .modal-footer {
+  background-color: rgba(215, 243, 255, 0.3); }
+
+/*box shadoow */
+.navActive {
+  color: #0085CC !important;
+  border-bottom: 2px solid #0085CC; }
+
+.carousel-item {
+  height: 90vh;
+  position: relative; }
+  .carousel-item::before {
+    content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: #0000000f;
+    width: 100%;
+    height: 100%; }
+  .carousel-item .carousel-caption {
+    position: absolute;
+    right: 15%;
+    top: 50%;
+    left: 15%;
+    z-index: 10;
+    color: #fff;
+    text-align: center;
+    transform: translate(0, -50%); }
+    .carousel-item .carousel-caption h5, .carousel-item .carousel-caption p {
+      color: #fff;
+      font-weight: bold;
+      letter-spacing: 2px;
+      font-size: 2rem; }
+    .carousel-item .carousel-caption p {
+      letter-spacing: 1px;
+      font-size: 1rem; }
+    .carousel-item .carousel-caption a {
+      font-size: 1.5rem; }
+
+@media (max-width: 991px) {
+  .carousel-item {
+    height: 50vh; } }
+/*start about*/
+.about p {
+  font-weight: 500; }
+
+/*Start Services*/
+.service .card {
+  background-color: rgba(215, 243, 255, 0.3); }
+  .service .card i {
+    color: #00e195;
+    transition: all 0.5s ease-in-out; }
+    .service .card i:hover {
+      color: #0085CC;
+      cursor: pointer; }
+  .service .card .card-body h3 {
+    color: #0085CC;
+    font-weight: bold; }
+
+/*Start Doctors*/
+.doctors .banner {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden; }
+  .doctors .banner .docCard {
+    width: 250px;
+    margin: 30px auto 0;
+    overflow: visible; }
+    .doctors .banner .docCard .card-body {
+      background-color: rgba(215, 243, 255, 0.3); }
+      .doctors .banner .docCard .card-body .card-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        letter-spacing: 2px;
+        color: #0085CC; }
+      .doctors .banner .docCard .card-body .card-text {
+        font-size: 1.1rem;
+        font-weight: 500; }
+        .doctors .banner .docCard .card-body .card-text small {
+          color: #0085CC;
+          letter-spacing: 1px; }
+
+.medSocialNetwork .socialText {
+  font-size: 1.5rem;
+  color: #0085CC;
+  font-weight: bold;
+  letter-spacing: 1px; }
+.medSocialNetwork i {
+  color: #000; }
+.medSocialNetwork .fa-twitter:hover {
+  transform: rotate(1turn);
+  color: #1da1f2;
+  transition: all 0.5s ease-in-out; }
+.medSocialNetwork .fa-facebook:hover {
+  transform: rotate(1turn);
+  color: #1877f2;
+  transition: all 0.5s ease-in-out; }
+.medSocialNetwork .fa-instagram:hover {
+  transform: rotate(1turn);
+  color: #c13584;
+  transition: all 0.5s ease-in-out; }
+.medSocialNetwork .fa-skype:hover {
+  transform: rotate(1turn);
+  color: #00aff0;
+  transition: all 0.5s ease-in-out; }
+.medSocialNetwork .fa-linkedin:hover {
+  transform: rotate(1turn);
+  color: #0077b5;
+  transition: all 0.5s ease-in-out; }
+
+.socialLink {
+  color: #0085CC;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 1.5rem; }
+
+.popLinks {
+  color: #000;
+  letter-spacing: 1px; }
+  .popLinks:hover {
+    text-decoration: none;
+    font-weight: bold;
+    color: #0085CC; }
+
+/*Start Foot*/
+.foot {
+  background-color: #00e195;
+  color: #fff; }
+  .foot p, .foot span {
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+    padding: 5px 0px;
+    margin-bottom: 0; }
+
+/*# sourceMappingURL=home.css.map */

@@ -1,0 +1,242 @@
+$logoGreen :#00e195;
+$logoBlue : #0085CC;
+$logoGray : #A8AD9B;
+$cardBg : #BE3C88;
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Cairo', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* common classes*/
+.sectionTitle {
+    text-align: center;
+    padding-bottom: 30px;
+    h2 {
+        font-size: 25px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        position: relative;
+        color: $logoBlue;
+        &::before {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 120px;
+            height: 1px;
+            background: $logoGray;
+            bottom: 1px;
+            left: calc(50% - 60px);
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 40px;
+            height: 3px;
+            background: $logoGreen;
+            bottom: 0;
+            left: calc(50% - 20px);
+        }
+    }
+}
+
+/*start modal*/
+.modal {
+    .modal-header {
+        background-color: rgba(215, 243, 255, 0.3);
+        .modal-title {
+            color: $logoBlue;
+            font-weight: bold;
+            letter-spacing: 1px;
+            font-size: 1.5rem;
+        }
+    }
+    .modal-body {
+        label {
+            color: $logoBlue;
+            letter-spacing: 2px;
+        }
+        a {
+            color: $logoBlue;
+            font-size: 1.1rem;
+            &:hover {
+                color: $logoGreen;
+                letter-spacing: 2px;
+                text-decoration: none;
+                transition: all 0.5s ease-in-out;
+            }
+        }
+    }
+    .modal-footer {
+        background-color: rgba(215, 243, 255, 0.3);
+    }
+}
+
+/*box shadoow */
+@mixin BoxShadow ($HrShadow,$VrShadow,$Blur,$SpreadRadius8px,$rgba) {
+    box-shadow: $HrShadow $VrShadow $Blur $SpreadRadius8px $rgba;
+    -webkit-box-shadow: $HrShadow $VrShadow $Blur $SpreadRadius8px $rgba;
+    -moz-box-shadow: $HrShadow $VrShadow $Blur $SpreadRadius8px $rgba;
+}
+
+.customBtn {
+    border-color: $logoBlue;
+    background-color: $logoBlue;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    &:hover {
+        background-color: #fff;
+        color: $logoBlue;
+        transition: all 0.5s ease-in-out;
+    }
+}
+
+.navActive {
+    color: $logoBlue !important;
+    border-bottom: 2px solid $logoBlue;
+}
+
+/*herobg*/
+.contactBg {
+    background-image: url('../../img/blog-img.jpg');
+    background-size: cover;
+    height: 60vh;
+    width: 100vw;
+    background-position: center;
+    position: relative;
+    &::before {
+        content: '';
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: #0000000f;
+        width: 100%;
+        height: 100%;
+    }
+    .card-title {
+        position: relative;
+        z-index: 50;
+    }
+    .breadText {
+        a {
+            color: $logoBlue;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+    }
+    .card-img {
+        height: 60vh;
+    }
+    .contactText {
+        color: #fff;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+}
+
+.blogArtc {
+    .card-body {
+        position: relative;
+        .cardBox {
+            position: absolute;
+            background-color: $logoGreen;
+            color: #fff;
+            font-size: 0.9rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+            border-radius: 8px;
+            top: -20px;
+            left: 70%;
+        }
+        .card-title {
+            color: $logoBlue;
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+    }
+}
+
+@media ( min-width:768px) and (max-width:991px) {
+    .blogArtc {
+        .card-body {
+            .cardBox {
+                font-size: 0.7rem;
+                letter-spacing: 1px;
+            }
+        }
+    }
+}
+
+.medSocialNetwork {
+    .socialText {
+        font-size: 1.5rem;
+        color: $logoBlue;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+    i {
+        color: #000;
+    }
+    .fa-twitter:hover {
+        transform: rotate(1turn);
+        color: #1da1f2;
+        transition: all 0.5s ease-in-out;
+    }
+    .fa-facebook:hover {
+        transform: rotate(1turn);
+        color: #1877f2;
+        transition: all 0.5s ease-in-out;
+    }
+    .fa-instagram:hover {
+        transform: rotate(1turn);
+        color: #c13584;
+        transition: all 0.5s ease-in-out;
+    }
+    .fa-skype:hover {
+        transform: rotate(1turn);
+        color: #00aff0;
+        transition: all 0.5s ease-in-out;
+    }
+    .fa-linkedin:hover {
+        transform: rotate(1turn);
+        color: #0077b5;
+        transition: all 0.5s ease-in-out;
+    }
+}
+
+.socialLink {
+    color: $logoBlue;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+}
+.popLinks {
+    color: #000;
+    letter-spacing: 1px;
+    &:hover {
+        text-decoration: none;
+        font-weight: bold;
+        color: $logoBlue;
+    }
+}
+
+/*Start Foot*/
+.foot {
+    background-color: $logoGreen;
+    color: #fff;
+    p , span{
+        font-weight: bold;
+        letter-spacing: 2px;
+        font-size: 1.1rem;
+        padding: 5px 0px;
+        margin-bottom: 0;
+    }
+}

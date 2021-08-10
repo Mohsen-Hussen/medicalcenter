@@ -1,0 +1,229 @@
+$logoGreen :#00e195;
+$logoBlue : #0085CC;
+$logoGray : #A8AD9B;
+$cardBg : #BE3C88;
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Cairo', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* common classes*/
+.sectionTitle {
+    text-align: center;
+    padding-bottom: 30px;
+    h2 {
+        font-size: 32px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        position: relative;
+        color: $logoBlue;
+        &::before {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 120px;
+            height: 1px;
+            background: $logoGray;
+            bottom: 1px;
+            left: calc(50% - 60px);
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 40px;
+            height: 3px;
+            background: $logoGreen;
+            bottom: 0;
+            left: calc(50% - 20px);
+        }
+    }
+}
+
+.customBtn {
+    border-color: $logoBlue;
+    background-color: $logoBlue;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    &:hover {
+        background-color: #fff;
+        color: $logoBlue;
+        transition: all 0.5s ease-in-out;
+    }
+}
+/*start modal*/
+.modal {
+    .modal-header {
+        background-color: rgba(215, 243, 255, 0.3);
+        .modal-title {
+            color: $logoBlue;
+            font-weight: bold;
+            letter-spacing: 1px;
+            font-size: 1.5rem;
+        }
+    }
+    .modal-body {
+        label {
+            color: $logoBlue;
+            letter-spacing: 2px;
+        }
+        a {
+            color: $logoBlue;
+            font-size: 1.1rem;
+            &:hover {
+                color: $logoGreen;
+                letter-spacing: 2px;
+                text-decoration: none;
+                transition: all 0.5s ease-in-out;
+            }
+        }
+    }
+    .modal-footer {
+        background-color: rgba(215, 243, 255, 0.3);
+    }
+}
+
+/*box shadoow */
+@mixin BoxShadow ($HrShadow,$VrShadow,$Blur,$SpreadRadius8px,$rgba) {
+    box-shadow: $HrShadow $VrShadow $Blur $SpreadRadius8px $rgba;
+    -webkit-box-shadow: $HrShadow $VrShadow $Blur $SpreadRadius8px $rgba;
+    -moz-box-shadow: $HrShadow $VrShadow $Blur $SpreadRadius8px $rgba;
+}
+
+
+.navActive {
+    color: $logoBlue !important;
+    border-bottom: 1px solid $logoBlue;
+}
+
+/*start gallery*/
+.gallery {
+    img:hover{
+        filter: drop-shadow(2px 4px 6px rgba(0 , 0 , 0 , 0.5)) grayscale(100%);
+        cursor: pointer;
+        border-radius: 10px;
+        transition: all 1s ease-in-out;
+    }
+}
+
+.nav-tabs {
+    border-bottom: 1px solid $logoGreen;
+}
+
+.tab-content>.active {
+    border: 1px solid $logoGreen;
+    border-top: none;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: $logoBlue;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-color: $logoGreen $logoGreen #fff;
+}
+
+.awards {
+    .card {
+        background-color: rgba(215, 243, 255, 0.3);
+    }
+}
+
+/*testmoniols*/
+.testimonials {
+    .banner {
+        width: 100%;
+        height: 80vh;
+        overflow: hidden;
+        .testCard {
+            width: 250px;
+            margin: 30px auto 0;
+            overflow: visible;
+            .card-body {
+                background-color: rgba(215, 243, 255, 0.3);
+                .card-title {
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    letter-spacing: 2px;
+                    color: $logoBlue;
+                }
+                .card-text {
+                    font-size: 1.1rem;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+.medSocialNetwork {
+    .socialText {
+        font-size: 1.5rem;
+        color: $logoBlue;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+    i {
+        color: #000;
+    }
+    .fa-twitter:hover {
+        transform: rotate(1turn);
+        color: #1da1f2;
+        transition: all 0.5s ease-in-out;
+    }
+    .fa-facebook:hover {
+        transform: rotate(1turn);
+        color: #1877f2;
+        transition: all 0.5s ease-in-out;
+    }
+    .fa-instagram:hover {
+        transform: rotate(1turn);
+        color: #c13584;
+        transition: all 0.5s ease-in-out;
+    }
+    .fa-skype:hover {
+        transform: rotate(1turn);
+        color: #00aff0;
+        transition: all 0.5s ease-in-out;
+    }
+    .fa-linkedin:hover {
+        transform: rotate(1turn);
+        color: #0077b5;
+        transition: all 0.5s ease-in-out;
+    }
+}
+
+.socialLink {
+    color: $logoBlue;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+}
+.popLinks {
+    color: #000;
+    letter-spacing: 1px;
+    &:hover {
+        text-decoration: none;
+        font-weight: bold;
+        color: $logoBlue;
+    }
+}
+
+/*Start Foot*/
+.foot {
+    background-color: $logoGreen;
+    color: #fff;
+    p , span{
+        font-weight: bold;
+        letter-spacing: 2px;
+        font-size: 1.1rem;
+        padding: 5px 0px;
+        margin-bottom: 0;
+    }
+}
