@@ -32,3 +32,10 @@ $('.clientTest').flipster({
     loop: true,
     autoplay: 3000
 });
+
+// change website color
+const colorName = () => {
+    let color = document.querySelector('.switch .colors .list-inline-item');
+    let colorNameAttr = color.getAttribute("data-color");
+    console.log(colorNameAttr);
+}

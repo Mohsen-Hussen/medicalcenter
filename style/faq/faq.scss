@@ -98,6 +98,31 @@ $cardBg : #BE3C88;
     }
 }
 
+/*change theme*/
+.switch {
+    position: fixed;
+    z-index: 500;
+    top: 50%;
+    right: 5px;
+    .colors {
+        .list-inline-item {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            &:nth-child(1) {
+                background-color: #e91e63;
+            }
+            &:nth-child(2) {
+                background-color: #9c27b0;
+            }
+            &:nth-child(3) {
+                background-color: #e64a19;
+            }
+        }
+    }
+}
+
 .navActive {
     color: $logoBlue !important;
     border-bottom: 2px solid $logoBlue;

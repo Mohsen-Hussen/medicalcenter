@@ -70,6 +70,24 @@
     color: #0085CC;
     transition: all 0.5s ease-in-out; }
 
+/*change theme*/
+.switch {
+  position: fixed;
+  z-index: 500;
+  top: 50%;
+  right: 5px; }
+  .switch .colors .list-inline-item {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    cursor: pointer; }
+    .switch .colors .list-inline-item:nth-child(1) {
+      background-color: #e91e63; }
+    .switch .colors .list-inline-item:nth-child(2) {
+      background-color: #9c27b0; }
+    .switch .colors .list-inline-item:nth-child(3) {
+      background-color: #e64a19; }
+
 .navActive {
   color: #0085CC !important;
   border-bottom: 2px solid #0085CC; }
