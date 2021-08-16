@@ -1,7 +1,9 @@
-$logoGreen :#00e195;
-$logoBlue : #0085CC;
-$logoGray : #A8AD9B;
-$cardBg : #BE3C88;
+:root {
+    --logoGreen :#00e195;
+    --logoBlue : #0085CC;
+    --logoGray : #A8AD9B;
+    --cardBg : #BE3C88;
+}
 
 * {
     padding: 0;
@@ -22,14 +24,14 @@ $cardBg : #BE3C88;
         margin-bottom: 20px;
         padding-bottom: 20px;
         position: relative;
-        color: $logoBlue;
+        color: var(--logoBlue);
         &::before {
             content: '';
             position: absolute;
             display: block;
             width: 120px;
             height: 1px;
-            background: $logoGray;
+            background: var(--logoGray);
             bottom: 1px;
             left: calc(50% - 60px);
         }
@@ -39,7 +41,7 @@ $cardBg : #BE3C88;
             display: block;
             width: 40px;
             height: 3px;
-            background: $logoGreen;
+            background: var(--logoGreen);
             bottom: 0;
             left: calc(50% - 20px);
         }
@@ -47,14 +49,14 @@ $cardBg : #BE3C88;
 }
 
 .customBtn {
-    border-color: $logoBlue;
-    background-color: $logoBlue;
+    border-color: var(--logoBlue);
+    background-color: var(--logoBlue);
     color: #fff;
     font-weight: bold;
     letter-spacing: 1px;
     &:hover {
         background-color: #fff;
-        color: $logoBlue;
+        color: var(--logoBlue);
         transition: all 0.5s ease-in-out;
     }
 }
@@ -64,7 +66,7 @@ $cardBg : #BE3C88;
     .modal-header {
         background-color: rgba(215, 243, 255, 0.3);
         .modal-title {
-            color: $logoBlue;
+            color: var(--logoBlue);
             font-weight: bold;
             letter-spacing: 1px;
             font-size: 1.5rem;
@@ -72,14 +74,14 @@ $cardBg : #BE3C88;
     }
     .modal-body {
         label {
-            color: $logoBlue;
+            color: var(--logoBlue);
             letter-spacing: 2px;
         }
         a {
-            color: $logoBlue;
+            color: var(--logoBlue);
             font-size: 1.1rem;
             &:hover {
-                color: $logoGreen;
+                color: var(--logoGreen);
                 letter-spacing: 2px;
                 text-decoration: none;
                 transition: all 0.5s ease-in-out;
@@ -98,9 +100,43 @@ $cardBg : #BE3C88;
     -moz-box-shadow: $HrShadow $VrShadow $Blur $SpreadRadius8px $rgba;
 }
 
+/*change theme*/
+.switch {
+    position: fixed;
+    z-index: 500;
+    top: 50%;
+    right: 5px;
+    .icon {
+        background-color: #4c4c4c;
+        border-radius: 10px;
+        color: #fff;
+    }
+        
+    .colors {
+        .list-inline-item {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            cursor: pointer;
+            &:first-child {
+                background-color: #0085CC;
+            }
+            &:nth-child(2) {
+                background-color: #e91e63;
+            }
+            &:nth-child(3) {
+                background-color: #9c27b0;
+            }
+            &:nth-child(4) {
+                background-color: #07d456;
+            }
+        }
+    }
+}
+
 .navActive {
-    color: $logoBlue !important;
-    border-bottom: 1px solid $logoBlue;
+    color: var(--logoBlue) !important;
+    border-bottom: 1px solid var(--logoBlue);
 }
 
 .contactBg {
@@ -125,7 +161,7 @@ $cardBg : #BE3C88;
     }
     .breadText {
         a {
-            color: $logoBlue;
+            color: var(--logoBlue);
             font-weight: bold;
             letter-spacing: 2px;
         }
@@ -134,7 +170,7 @@ $cardBg : #BE3C88;
         height: 60vh;
     }
     .contactText {
-        color: $logoBlue;
+        color: var(--logoBlue);
         font-weight: bold;
         letter-spacing: 2px;
     }
@@ -156,7 +192,7 @@ $cardBg : #BE3C88;
 .medSocialNetwork {
     .socialText {
         font-size: 1.5rem;
-        color: $logoBlue;
+        color: var(--logoBlue);
         font-weight: bold;
         letter-spacing: 1px;
     }
@@ -191,7 +227,7 @@ $cardBg : #BE3C88;
 }
 
 .socialLink {
-    color: $logoBlue;
+    color: var(--logoBlue);
     font-weight: bold;
     letter-spacing: 1px;
     font-size: 1.5rem;
@@ -202,13 +238,13 @@ $cardBg : #BE3C88;
     &:hover {
         text-decoration: none;
         font-weight: bold;
-        color: $logoBlue;
+        color: var(--logoBlue);
     }
 }
 
 /*Start Foot*/
 .foot {
-    background-color: $logoGreen;
+    background-color: var(--logoGreen);
     color: #fff;
     p , span{
         font-weight: bold;

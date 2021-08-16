@@ -1,3 +1,9 @@
+:root {
+  --logoGreen:#00e195;
+  --logoBlue: #0085CC;
+  --logoGray: #A8AD9B;
+  --cardBg: #BE3C88; }
+
 * {
   padding: 0;
   margin: 0;
@@ -16,14 +22,14 @@
     margin-bottom: 20px;
     padding-bottom: 20px;
     position: relative;
-    color: #0085CC; }
+    color: var(--logoBlue); }
     .sectionTitle h2::before {
       content: '';
       position: absolute;
       display: block;
       width: 120px;
       height: 1px;
-      background: #A8AD9B;
+      background: var(--logoGray);
       bottom: 1px;
       left: calc(50% - 60px); }
     .sectionTitle h2::after {
@@ -32,37 +38,37 @@
       display: block;
       width: 40px;
       height: 3px;
-      background: #00e195;
+      background: var(--logoGreen);
       bottom: 0;
       left: calc(50% - 20px); }
 
 .customBtn {
-  border-color: #0085CC;
-  background-color: #0085CC;
+  border-color: var(--logoBlue);
+  background-color: var(--logoBlue);
   color: #fff;
   font-weight: bold;
   letter-spacing: 1px; }
   .customBtn:hover {
     background-color: #fff;
-    color: #0085CC;
+    color: var(--logoBlue);
     transition: all 0.5s ease-in-out; }
 
 /*start modal*/
 .modal .modal-header {
   background-color: rgba(215, 243, 255, 0.3); }
   .modal .modal-header .modal-title {
-    color: #0085CC;
+    color: var(--logoBlue);
     font-weight: bold;
     letter-spacing: 1px;
     font-size: 1.5rem; }
 .modal .modal-body label {
-  color: #0085CC;
+  color: var(--logoBlue);
   letter-spacing: 2px; }
 .modal .modal-body a {
-  color: #0085CC;
+  color: var(--logoBlue);
   font-size: 1.1rem; }
   .modal .modal-body a:hover {
-    color: #00e195;
+    color: var(--logoGreen);
     letter-spacing: 2px;
     text-decoration: none;
     transition: all 0.5s ease-in-out; }
@@ -70,9 +76,33 @@
   background-color: rgba(215, 243, 255, 0.3); }
 
 /*box shadoow */
+/*change theme*/
+.switch {
+  position: fixed;
+  z-index: 500;
+  top: 50%;
+  right: 5px; }
+  .switch .icon {
+    background-color: #4c4c4c;
+    border-radius: 10px;
+    color: #fff; }
+  .switch .colors .list-inline-item {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer; }
+    .switch .colors .list-inline-item:first-child {
+      background-color: #0085CC; }
+    .switch .colors .list-inline-item:nth-child(2) {
+      background-color: #e91e63; }
+    .switch .colors .list-inline-item:nth-child(3) {
+      background-color: #9c27b0; }
+    .switch .colors .list-inline-item:nth-child(4) {
+      background-color: #07d456; }
+
 .navActive {
-  color: #0085CC !important;
-  border-bottom: 1px solid #0085CC; }
+  color: var(--logoBlue) !important;
+  border-bottom: 1px solid var(--logoBlue); }
 
 /*start gallery*/
 .gallery img:hover {
@@ -82,17 +112,17 @@
   transition: all 1s ease-in-out; }
 
 .nav-tabs {
-  border-bottom: 1px solid #00e195; }
+  border-bottom: 1px solid var(--logoGreen); }
 
 .tab-content > .active {
-  border: 1px solid #00e195;
+  border: 1px solid var(--logoGreen);
   border-top: none; }
 
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-  color: #0085CC;
+  color: var(--logoBlue);
   font-weight: bold;
   letter-spacing: 1px;
-  border-color: #00e195 #00e195 #fff; }
+  border-color: var(--logoGreen) var(--logoGreen) #fff; }
 
 .awards .card {
   background-color: rgba(215, 243, 255, 0.3); }
@@ -112,14 +142,14 @@
         font-size: 1.5rem;
         font-weight: bold;
         letter-spacing: 2px;
-        color: #0085CC; }
+        color: var(--logoBlue); }
       .testimonials .banner .testCard .card-body .card-text {
         font-size: 1.1rem;
         font-weight: 500; }
 
 .medSocialNetwork .socialText {
   font-size: 1.5rem;
-  color: #0085CC;
+  color: var(--logoBlue);
   font-weight: bold;
   letter-spacing: 1px; }
 .medSocialNetwork i {
@@ -146,7 +176,7 @@
   transition: all 0.5s ease-in-out; }
 
 .socialLink {
-  color: #0085CC;
+  color: var(--logoBlue);
   font-weight: bold;
   letter-spacing: 1px;
   font-size: 1.5rem; }
@@ -157,11 +187,11 @@
   .popLinks:hover {
     text-decoration: none;
     font-weight: bold;
-    color: #0085CC; }
+    color: var(--logoBlue); }
 
 /*Start Foot*/
 .foot {
-  background-color: #00e195;
+  background-color: var(--logoGreen);
   color: #fff; }
   .foot p, .foot span {
     font-weight: bold;

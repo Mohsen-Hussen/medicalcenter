@@ -1,7 +1,9 @@
-$logoGreen :#00e195;
-$logoBlue : #0085CC;
-$logoGray : #A8AD9B;
-$cardBg : rgba(215, 243, 255, 0.3);
+:root {
+    --logoGreen :#00e195;
+    --logoBlue : #0085CC;
+    --logoGray : #A8AD9B;
+    --cardBg : rgba(215, 243, 255, 0.3);
+}
 
 * {
     padding: 0;
@@ -22,14 +24,14 @@ $cardBg : rgba(215, 243, 255, 0.3);
         margin-bottom: 20px;
         padding-bottom: 20px;
         position: relative;
-        color: $logoBlue;
+        color: var(--logoBlue);
         &::before {
             content: '';
             position: absolute;
             display: block;
             width: 120px;
             height: 1px;
-            background: $logoGray;
+            background: var(--logoGray);
             bottom: 1px;
             left: calc(50% - 60px);
         }
@@ -39,7 +41,7 @@ $cardBg : rgba(215, 243, 255, 0.3);
             display: block;
             width: 40px;
             height: 3px;
-            background: $logoGreen;
+            background: var(--logoGreen);
             bottom: 0;
             left: calc(50% - 20px);
         }
@@ -47,26 +49,26 @@ $cardBg : rgba(215, 243, 255, 0.3);
 }
 
 .customBtn {
-    border-color: $logoBlue;
-    background-color: $logoBlue;
+    border-color: var(--logoBlue);
+    background-color: var(--logoBlue);
     color: #fff;
     font-weight: bold;
     letter-spacing: 1px;
     &:hover {
         background-color: #fff;
-        color: $logoBlue;
+        color: var(--logoBlue);
         transition: all 0.5s ease-in-out;
     }
 }
 
 .profileBtn {
-    border-color: $logoGreen;
+    border-color: var(--logoGreen);
     background-color: #fff;
-    color: $logoGreen;
+    color: var(--logoGreen);
     font-weight: bold;
     letter-spacing: 1px;
     &:hover {
-        background-color: $logoGreen;
+        background-color: var(--logoGreen);
         color: #fff;
         transition: all 0.5s ease-in-out;
     }
@@ -84,6 +86,40 @@ $cardBg : rgba(215, 243, 255, 0.3);
     -moz-box-shadow: $HrShadow $VrShadow $Blur $SpreadRadius8px $rgba;
 }
 
+/*change theme*/
+.switch {
+    position: fixed;
+    z-index: 500;
+    top: 50%;
+    right: 5px;
+    .icon {
+        background-color: #4c4c4c;
+        border-radius: 10px;
+        color: #fff;
+    }
+        
+    .colors {
+        .list-inline-item {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            cursor: pointer;
+            &:first-child {
+                background-color: #0085CC;
+            }
+            &:nth-child(2) {
+                background-color: #e91e63;
+            }
+            &:nth-child(3) {
+                background-color: #9c27b0;
+            }
+            &:nth-child(4) {
+                background-color: #07d456;
+            }
+        }
+    }
+}
+
 /*start home*/
 .home {
     margin: 100px 0;
@@ -92,11 +128,11 @@ $cardBg : rgba(215, 243, 255, 0.3);
     }
     h1 {
         font-size: 3rem;
-        color: $logoBlue;
+        color: var(--logoBlue);
         letter-spacing: 2px;
     }
     p:first-of-type {
-        color: $logoGreen;
+        color: var(--logoGreen);
         font-weight: bold;
         letter-spacing: 2px;
     }
@@ -110,19 +146,19 @@ $cardBg : rgba(215, 243, 255, 0.3);
 }
 /*start cv*/
 .nav-tabs {
-    border-bottom: 1px solid $logoGreen;
+    border-bottom: 1px solid var(--logoGreen);
 }
 
 .tab-content>.active {
-    border: 1px solid $logoGreen;
+    border: 1px solid var(--logoGreen);
     border-top: none;
 }
 
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-    color: $logoBlue;
+    color: var(--logoBlue);
     font-weight: bold;
     letter-spacing: 1px;
-    border-color: $logoGreen $logoGreen #fff;
+    border-color: var(--logoGreen) var(--logoGreen) #fff;
 }
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link {
     color: #000;
@@ -140,12 +176,12 @@ $cardBg : rgba(215, 243, 255, 0.3);
             margin: 30px auto 0;
             overflow: visible;
             .card-body {
-                background-color: $cardBg;
+                background-color: var(--cardBg);
                 .card-title {
                     font-size: 1.5rem;
                     font-weight: bold;
                     letter-spacing: 2px;
-                    color: $logoBlue;
+                    color: var(--logoBlue);
                 }
                 .card-text {
                     font-size: 1.1rem;
@@ -159,7 +195,7 @@ $cardBg : rgba(215, 243, 255, 0.3);
 .medSocialNetwork {
     .socialText {
         font-size: 1.5rem;
-        color: $logoBlue;
+        color: var(--logoBlue);
         font-weight: bold;
         letter-spacing: 1px;
     }
@@ -194,7 +230,7 @@ $cardBg : rgba(215, 243, 255, 0.3);
 }
 
 .socialLink {
-    color: $logoBlue;
+    color: var(--logoBlue);
     font-weight: bold;
     letter-spacing: 1px;
     font-size: 1.5rem;
@@ -205,13 +241,13 @@ $cardBg : rgba(215, 243, 255, 0.3);
     &:hover {
         text-decoration: none;
         font-weight: bold;
-        color: $logoBlue;
+        color: var(--logoBlue);
     }
 }
 
 /*Start Foot*/
 .foot {
-    background-color: $logoGreen;
+    background-color: var(--logoGreen);
     color: #fff;
     p , span{
         font-weight: bold;

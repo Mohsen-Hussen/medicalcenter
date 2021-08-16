@@ -1,3 +1,9 @@
+:root {
+  --logoGreen:#00e195;
+  --logoBlue: #0085CC;
+  --logoGray: #A8AD9B;
+  --cardBg: #BE3C88; }
+
 * {
   padding: 0;
   margin: 0;
@@ -16,14 +22,14 @@
     margin-bottom: 20px;
     padding-bottom: 20px;
     position: relative;
-    color: #0085CC; }
+    color: var(--logoBlue); }
     .sectionTitle h2::before {
       content: '';
       position: absolute;
       display: block;
       width: 120px;
       height: 1px;
-      background: #A8AD9B;
+      background: var(--logoGray);
       bottom: 1px;
       left: calc(50% - 60px); }
     .sectionTitle h2::after {
@@ -32,29 +38,29 @@
       display: block;
       width: 40px;
       height: 3px;
-      background: #00e195;
+      background: var(--logoGreen);
       bottom: 0;
       left: calc(50% - 20px); }
 
 .customBtn {
-  border-color: #0085CC;
-  background-color: #0085CC;
+  border-color: var(--logoBlue);
+  background-color: var(--logoBlue);
   color: #fff;
   font-weight: bold;
   letter-spacing: 1px; }
   .customBtn:hover {
     background-color: #fff;
-    color: #0085CC;
+    color: var(--logoBlue);
     transition: all 0.5s ease-in-out; }
 
 .profileBtn {
-  border-color: #00e195;
+  border-color: var(--logoGreen);
   background-color: #fff;
-  color: #00e195;
+  color: var(--logoGreen);
   font-weight: bold;
   letter-spacing: 1px; }
   .profileBtn:hover {
-    background-color: #00e195;
+    background-color: var(--logoGreen);
     color: #fff;
     transition: all 0.5s ease-in-out; }
 
@@ -64,18 +70,18 @@
 .modal .modal-header {
   background-color: rgba(215, 243, 255, 0.3); }
   .modal .modal-header .modal-title {
-    color: #0085CC;
+    color: var(--logoBlue);
     font-weight: bold;
     letter-spacing: 1px;
     font-size: 1.5rem; }
 .modal .modal-body label {
-  color: #0085CC;
+  color: var(--logoBlue);
   letter-spacing: 2px; }
 .modal .modal-body a {
-  color: #0085CC;
+  color: var(--logoBlue);
   font-size: 1.1rem; }
   .modal .modal-body a:hover {
-    color: #00e195;
+    color: var(--logoGreen);
     letter-spacing: 2px;
     text-decoration: none;
     transition: all 0.5s ease-in-out; }
@@ -83,19 +89,43 @@
   background-color: rgba(215, 243, 255, 0.3); }
 
 /*box shadoow */
+/*change theme*/
+.switch {
+  position: fixed;
+  z-index: 500;
+  top: 50%;
+  right: 5px; }
+  .switch .icon {
+    background-color: #4c4c4c;
+    border-radius: 10px;
+    color: #fff; }
+  .switch .colors .list-inline-item {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer; }
+    .switch .colors .list-inline-item:first-child {
+      background-color: #0085CC; }
+    .switch .colors .list-inline-item:nth-child(2) {
+      background-color: #e91e63; }
+    .switch .colors .list-inline-item:nth-child(3) {
+      background-color: #9c27b0; }
+    .switch .colors .list-inline-item:nth-child(4) {
+      background-color: #07d456; }
+
 .navActive {
-  color: #0085CC !important;
-  border-bottom: 2px solid #0085CC; }
+  color: var(--logoBlue) !important;
+  border-bottom: 2px solid var(--logoBlue); }
 
 /* form*/
 form label {
-  color: #0085CC;
+  color: var(--logoBlue);
   font-size: 1.1rem;
   letter-spacing: 2px; }
 
 .medSocialNetwork .socialText {
   font-size: 1.5rem;
-  color: #0085CC;
+  color: var(--logoBlue);
   font-weight: bold;
   letter-spacing: 1px; }
 .medSocialNetwork i {
@@ -122,7 +152,7 @@ form label {
   transition: all 0.5s ease-in-out; }
 
 .socialLink {
-  color: #0085CC;
+  color: var(--logoBlue);
   font-weight: bold;
   letter-spacing: 1px;
   font-size: 1.5rem; }
@@ -133,11 +163,11 @@ form label {
   .popLinks:hover {
     text-decoration: none;
     font-weight: bold;
-    color: #0085CC; }
+    color: var(--logoBlue); }
 
 /*Start Foot*/
 .foot {
-  background-color: #00e195;
+  background-color: var(--logoGreen);
   color: #fff; }
   .foot p, .foot span {
     font-weight: bold;
