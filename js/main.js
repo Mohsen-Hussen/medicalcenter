@@ -17,7 +17,7 @@
     });
 
     $('.docCard').flipster({
-        style:'carousel',
+        style:'flat',
         spacing:-0.4,
         loop: true,
         autoplay: 3000

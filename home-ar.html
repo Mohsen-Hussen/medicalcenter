@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +7,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="./style/bootstrap.min.css" rel="stylesheet" >
+    <!-- <link href="./style/bootstrap-rtl.min.css" rel="stylesheet" > -->
     <link rel="stylesheet" href="./style/jquery.flipster.min.css">
     <link href="./style/home/home.css" rel="stylesheet" >
-    <title>Home</title>
+    <link href="./style/homeAr/homeAr.css" rel="stylesheet" >
+    <title>الرئيسية</title>
 </head>
 <body>
     <!-- Start Nav -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
             <a class="navbar-brand" href="home.html">
                 <img src="./img/main-logo.png" alt="main-logo" class="img-fluid" style="width: 60px; height: 60px;"/>
@@ -23,39 +25,39 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="medicalNav">
-            <ul class="navbar-nav ml-auto text-center">
-                <li class="nav-item active">
-                    <a class="nav-link navActive" href="./home.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./about.html" target="_blank">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./doctors.html" target="_blank">Doctors</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./faq.html" target="_blank">FAQ</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./blog.html" target="_blank">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./contact us.html" target="_blank">Contact</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="langDropDown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Language
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="langDropDown">
-                        <a class="dropdown-item text-center" href="./home-ar.html"><img src="./img/egypt.png" alt="egypt-flag" class="img-fluid"/></a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <button type="button" class="btn customBtn" data-toggle="modal" data-target="#loginModal">
-                        Login
-                    </button>
-                </li>
-            </ul>
+                <ul class="navbar-nav mr-auto text-center">
+                    <li class="nav-item active">
+                        <a class="nav-link navActive" href="./home.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html" target="_blank">من نحن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./doctors.html" target="_blank">الأطباء</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./faq.html" target="_blank">الأسئلة الشائعة</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./blog.html" target="_blank">مقالات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact us.html" target="_blank">تواصل معنا</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="langDropDown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            اللغة
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="langDropDown">
+                            <a class="dropdown-item text-center" href="./home.html"><img src="./img/united-kingdom.png" alt="eng-flag" class="img-fluid"/></a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn customBtn" data-toggle="modal" data-target="#loginModal">
+                            تسجيل الدخول
+                        </button>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
@@ -64,7 +66,7 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                    <h5 class="modal-title" id="loginModalLabel">تسجيل الدخول</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -72,20 +74,20 @@
                 <div class="modal-body">
                     <form>
                         <div class="form-group">
-                            <label for="username" class="col-form-label">Username</label>
+                            <label for="username" class="col-form-label">أسم المستخدم</label>
                             <input type="text" class="form-control" id="username">
                         </div>
                         <div class="form-group">
-                            <label for="password" class="col-form-label">Password</label>
+                            <label for="password" class="col-form-label">كلمة السر</label>
                             <input type="password" class="form-control" id="password">
                         </div>
                         <div class="my-4 text-center">
-                            <button type="button" class="btn customBtn btn-lg">Login</button>
+                            <button type="button" class="btn customBtn btn-lg">تسجيل الدخول</button>
                         </div>
                     </form>
                     <div class="text-center">
-                        <p class="lead">OR</p>
-                        <a href="./register.html">Create New Account</a>
+                        <p class="lead">أو</p>
+                        <a href="./register.html">إنشاء حساب جديد</a>
                     </div>
                 </div>
             </div>
@@ -103,30 +105,30 @@
             <div class="carousel-inner">
                 <div class="carousel-item active" style="background-image: url('./img/carousel-1.jpg'); background-size: cover;">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p class="lead">Some representative placeholder content for the second slide.</p>
-                        <a href="./about.html" target="_blank" class="btn customBtn btn-lg">Get Started</a>
+                        <h5>الشريحة الأولى</h5>
+                        <p class="lead">بعض الكلام سوف يكتب هنا ... هذا كلام للأختبار فقط</p>
+                        <a href="./about.html" target="_blank" class="btn customBtn btn-lg">أبدأ</a>
                     </div>
                 </div>
                 <div class="carousel-item" style="background-image: url('./img/carousel-2.jpg'); background-size: cover;">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p class="lead">Some representative placeholder content for the second slide.</p>
-                        <a href="./about.html" target="_blank" class="btn customBtn btn-lg">Get Started</a>
+                        <h5>الشريحة الثانية</h5>
+                        <p class="lead">بعض الكلام سوف يكتب هنا ... هذا كلام للأختبار فقط</p>
+                        <a href="./about.html" target="_blank" class="btn customBtn btn-lg">أبدأ</a>
                     </div>
                 </div>
                 <div class="carousel-item" style="background-image: url('./img/carousel-3.jpg'); background-size: cover;">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p class="lead">Some representative placeholder content for the second slide.</p>
-                        <a href="./about.html" target="_blank" class="btn customBtn btn-lg">Get Started</a>
+                        <h5>الشريحة الثالثة</h5>
+                        <p class="lead">بعض الكلام سوف يكتب هنا ... هذا كلام للأختبار فقط</p>
+                        <a href="./about.html" target="_blank" class="btn customBtn btn-lg">أبدأ</a>
                     </div>
                 </div>
                 <div class="carousel-item" style="background-image: url('./img/carousel-4.jpg'); background-size: cover;">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p class="lead">Some representative placeholder content for the second slide.</p>
-                        <a href="./about.html" target="_blank" class="btn customBtn btn-lg">Get Started</a>
+                        <h5>الشريحة الرابعة</h5>
+                        <p class="lead">بعض الكلام سوف يكتب هنا ... هذا كلام للأختبار فقط</p>
+                        <a href="./about.html" target="_blank" class="btn customBtn btn-lg">أبدأ</a>
                     </div>
                 </div>
             </div>
@@ -157,23 +159,24 @@
         <div class="about text-center">
             <div class="row">
                 <div class="col-sm-12 text-center sectionTitle">
-                    <h2>About Us</h2>
+                    <h2>من نحن</h2>
                 </div>
                 <div class="col-sm-6 mb-5">
                     <img src="./img/about-img.jpg" alt="about-img" class="img-fluid rounded"/>
                 </div>
                 <div class="col-sm-6">
                     <p class="lead mb-4 p-3" style="background-color: rgba(215, 243, 255, 0.3);">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, omnis adipisci. Nihil officiis 
-                        sapiente explicabo provident. Corrupti, nemo blanditiis nulla, sed mollitia est sapiente, 
-                        exercitationem eaque amet nesciunt vero sint.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, omnis adipisci. Nihil officiis 
-                        sapiente explicabo provident. Corrupti, nemo blanditiis nulla, sed mollitia est sapiente, 
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, omnis adipisci. Nihil officiis 
+                        هناك حقيقة مثبتة منذ زمن طويل وهي لوريم يوجد محتوى نصي
+                        " فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء. العديد من برامح النشر المكتبي وبرامح تحرير
+                        صفحات
+                        الويب تستخدم لوريم إيبسوم بشكل إفتراضي كنموذج عن النص، وإذا قمت بإدخال "lorem ipsum" 
+                        في أي محرك بحث ستظهر العديد
+                        من المواقع الحديثة العهد في نتائج البحث. على مدى السنين ظهرت نسخ جديدة ومختلفة من نص 
+                        لوريم
                     </p>
                     <div class="text-center">
                         <a href="./about.html" target="_blank" class="btn customBtn btn-lg ">
-                            View More  <i class="fas fa-chevron-circle-right"></i>
+                            المزيد  <i class="fas fa-chevron-circle-left"></i>
                         </a>
                     </div>
                 </div>
@@ -183,7 +186,7 @@
         <div class="service mt-5 text-center">
             <div class="row">
                 <div class="col-sm-12 text-center sectionTitle">
-                    <h2>Services</h2>
+                    <h2>خدماتنا</h2>
                 </div>
             </div>
             <div class="row">
@@ -191,8 +194,8 @@
                     <div class="card">
                         <i class="fas fa-stethoscope fa-3x card-img-top mt-3"></i>
                         <div class="card-body ">
-                            <h3 class="card-title">Special title treatment</h3>
-                            <p class="card-text lead">With supporting text below as a natural lead-in to additional content.</p>
+                            <h3 class="card-title">نص مميز</h3>
+                            <p class="card-text lead">بعض الكلام سوف يكتب هنا ... هذا كلام للأختبار فقط</p>
                         </div>
                     </div>
                 </div>
@@ -200,8 +203,8 @@
                     <div class="card">
                         <i class="fas fa-eye fa-3x card-img-top mt-3"></i>
                         <div class="card-body">
-                            <h3 class="card-title">Special title treatment</h3>
-                            <p class="card-text lead">With supporting text below as a natural lead-in to additional content.</p>
+                            <h3 class="card-title">نص مميز</h3>
+                            <p class="card-text lead">بعض الكلام سوف يكتب هنا ... هذا كلام للأختبار فقط</p>
                         </div>
                     </div>
                 </div>
@@ -211,8 +214,8 @@
                     <div class="card">
                         <i class="fas fa-ambulance fa-3x card-img-top mt-3"></i>
                         <div class="card-body ">
-                            <h3 class="card-title">Special title treatment</h3>
-                            <p class="card-text lead">With supporting text below as a natural lead-in to additional content.</p>
+                            <h3 class="card-title">نص مميز</h3>
+                            <p class="card-text lead">بعض الكلام سوف يكتب هنا ... هذا كلام للأختبار فقط</p>
                         </div>
                     </div>
                 </div>
@@ -220,8 +223,8 @@
                     <div class="card">
                         <i class="fas fa-tooth fa-3x card-img-top mt-3"></i>
                         <div class="card-body">
-                            <h3 class="card-title">Special title treatment</h3>
-                            <p class="card-text lead">With supporting text below as a natural lead-in to additional content.</p>
+                            <h3 class="card-title">نص مميز</h3>
+                            <p class="card-text lead">بعض الكلام سوف يكتب هنا ... هذا كلام للأختبار فقط</p>
                         </div>
                     </div>
                 </div>
@@ -231,7 +234,7 @@
         <div class="doctors mt-5">
             <div class="row">
                 <div class="col-sm-12 text-center sectionTitle">
-                    <h2>Doctors</h2>
+                    <h2>الأطباء</h2>
                 </div>
             </div>
             <div class="row">
@@ -243,9 +246,9 @@
                                     <div class="card mb-3 text-center">
                                         <img src="./img/doctor-photo.jpg" class="card-img-top" alt="doctor-img">
                                         <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text"><small>Job title</small></p>
-                                            <p class="card-text lead">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                            <h5 class="card-title">أسم الطبيب</h5>
+                                            <p class="card-text"><small>تخصص الطبيب</small></p>
+                                            <p class="card-text lead">نبذة مختصرة عن الطبيب ... بعض الكلام سوف يكتب هنا ... هذا كلام للأختبار فقط</p>
                                         </div>
                                     </div>
                                 </li>
@@ -253,9 +256,9 @@
                                     <div class="card mb-3 text-center">
                                         <img src="./img/doctor-photo-1.jpg" class="card-img-top" alt="doctor-img">
                                         <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text"><small>Job title</small></p>
-                                            <p class="card-text lead">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                            <h5 class="card-title">أسم الطبيب</h5>
+                                            <p class="card-text"><small>تخصص الطبيب</small></p>
+                                            <p class="card-text lead">نبذة مختصرة عن الطبيب ... بعض الكلام سوف يكتب هنا ... هذا كلام للأختبار فقط</p>
                                         </div>
                                     </div>
                                 </li>
@@ -263,9 +266,9 @@
                                     <div class="card mb-3 text-center">
                                         <img src="./img/doctor-photo-2.jpg" class="card-img-top" alt="doctor-img">
                                         <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text"><small>Job title</small></p>
-                                            <p class="card-text lead">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                            <h5 class="card-title">أسم الطبيب</h5>
+                                            <p class="card-text"><small>تخصص الطبيب</small></p>
+                                            <p class="card-text lead">نبذة مختصرة عن الطبيب ... بعض الكلام سوف يكتب هنا ... هذا كلام للأختبار فقط</p>
                                         </div>
                                     </div>
                                 </li>
@@ -273,9 +276,9 @@
                                     <div class="card mb-3 text-center">
                                         <img src="./img/doctor-photo-3.jpg" class="card-img-top" alt="doctor-img">
                                         <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text"><small>Job title</small></p>
-                                            <p class="card-text lead">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                            <h5 class="card-title">أسم الطبيب</h5>
+                                            <p class="card-text"><small>تخصص الطبيب</small></p>
+                                            <p class="card-text lead">نبذة مختصرة عن الطبيب ... بعض الكلام سوف يكتب هنا ... هذا كلام للأختبار فقط</p>
                                         </div>
                                     </div>
                                 </li>
@@ -287,16 +290,17 @@
         </div>
     </section>
     <!-- start social -->
-    <section class="container-fluid" style="background-color: #eee;">
+    <section class="container-fluid footAr" style="background-color: #eee;">
         <div class="row mt-5 p-4">
             <div class="col-sm-12 col-lg-4 mt-3">
                 <img src="./img/main-logo.png" alt="main-logo" class="img-fluid" style="width: 60px; height: 60px;"/>
-                <p class="mt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id dolor earum nesciunt facilis 
-                    dicta odit, quos optio hic similique 
-                    ipsam praesentium quas illo?</p>
+                <p class="mt-2"> " فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء
+                    . العديد من برامح النشر المكتبي وبرامح تحرير صفحات
+                    الويب تستخدم لوريم إيبسوم بشكل إفتراضي كنموذج عن النص، وإذا قمت بإدخال "lorem ipsum" في أي محرك بحث ستظهر العديد من المواقع الحديثة العهد في نتائج البحث. على مدى
+                    السنين ظهرت نسخ </p>
             </div>
             <div class="col-sm-12 col-lg-4 medSocialNetwork my-4 text-center">
-                <h5 class="mb-4 socialText">Social Media</h5>
+                <h5 class="mb-4 socialText">تواصل معنا على منصاتنا</h5>
                 <div class="social-links">
                     <a href="#" class="mr-2 mb-1"><i class="fab fa-twitter fa-2x"></i></a>
                     <a href="#" class="mr-2 mb-1"><i class="fab fa-facebook fa-2x"></i></a>
@@ -305,13 +309,13 @@
                     <a href="#" class="mr-2 mb-1"><i class="fab fa-linkedin fa-2x"></i></a>
                 </div>
             </div>
-            <div class="col-sm-12 col-lg-4 mt-4">
-                <h5 class="mb-4 socialLink">Popular Links</h5>
+            <div class="col-sm-12 col-lg-4 mt-4 ulAr">
+                <h5 class="mb-4 socialLink">روابط شائعة</h5>
                 <ul class="list-inline">
-                    <li class="list-item"><a href="./home.html" target="_blank" class="popLinks">Home</a></li>
-                    <li class="list-item"><a href="./about.html" target="_blank" class="popLinks">About</a></li>
-                    <li class="list-item"><a href="./doctors.html" target="_blank" class="popLinks">Doctors</a></li>
-                    <li class="list-item"><a href="./faq.html" target="_blank" class="popLinks">FAQ</a></li>
+                    <li class="list-item"><a href="./home.html" target="_blank" class="popLinks">الرئيسية</a></li>
+                    <li class="list-item"><a href="./about.html" target="_blank" class="popLinks">من نحن</a></li>
+                    <li class="list-item"><a href="./doctors.html" target="_blank" class="popLinks">الأطباء</a></li>
+                    <li class="list-item"><a href="./faq.html" target="_blank" class="popLinks">الأسئلة الشائعة</a></li>
                 </ul>
             </div>
         </div>
@@ -321,21 +325,19 @@
         <footer class="foot text-center p-3">
             <div class="row justify-content-center align-items-center">
                 <div class="col-sm-12 col-md-6">
-                    <p class="lead">&copy; Copyright 2019 Pearogram, All rights reserved.</p>
+                    <p class="lead">جميع حقوق  الطبع و النشر محفوظة</p>
                 </div>
                 <div class="col-sm-12 col-md-6">
-                    <span>Developed By</span>
+                    <span>تم التصميم بواسطة شركة</span>
                     <a href="http://pearogram.com/" target="_blank">
-                        <img src="./img/perogramlogo.png" alt="main-logo" class="img-fluid" style="width: 15%;"/>
+                        <img src="./img/perogramlogo.png" alt="main-logo" class="img-fluid" style="width: 12%;"/>
                     </a>
                 </div>
             </div>
         </footer>
     </section>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
     <script src="./js/jquery.flipster.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
