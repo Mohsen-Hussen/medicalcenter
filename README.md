@@ -1,1 +1,1 @@
-# Medical Center Multi Page using Html , Scss , Bootstrap & Flipster
+# Medical Center Multi Page using Html , Scss , Bootstrap , jQuery & Flipster js
