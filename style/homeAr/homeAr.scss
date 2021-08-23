@@ -1,6 +1,16 @@
+* {
+    letter-spacing: 0 !important;
+}
+
 .footAr {
     img , .ulAr h5 , .ulAr ul li{
         display: flex;
         flex-direction: flex-start;
+    }
+}
+
+.foot {
+    p , span {
+        font-size: 0.8rem;
     }
 }
