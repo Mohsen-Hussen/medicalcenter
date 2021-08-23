@@ -2,6 +2,20 @@
     letter-spacing: 0 !important;
 }
 
+.modal {
+    .modal-header {
+        button {
+            margin-left: 0px !important;
+        }
+    }
+    .modal-body {
+        label {
+            display: flex;
+            flex-direction: flex-start;
+        }
+    }
+}
+
 .footAr {
     img , .ulAr h5 , .ulAr ul li{
         display: flex;
